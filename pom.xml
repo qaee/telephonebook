@@ -35,5 +35,10 @@
             <artifactId>derby</artifactId>
             <version>10.13.1.1</version>
         </dependency>
+        <!-- JUNIT test -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
     </dependencies>
 </project>
