@@ -10,10 +10,9 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@SpringBootTest
+
 class ContactServiceTest {
 
-    @Autowired
     private ContactRepository contactRepository;
     /*@BeforeAll
     public void init(){

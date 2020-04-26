@@ -2,13 +2,10 @@ package de.vf.telephonebook.model;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
-@Table(name = "t_contact")
 @Data
 public class Contact {
 
@@ -16,5 +13,7 @@ public class Contact {
     @GeneratedValue
     private Integer id;
     private String name;
-    private String phoneNumber;
+    @OneToMany(cascade = CascadeType.ALL)
+    private List<ContactNumber> contactNumbers;
+
 }

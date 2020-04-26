@@ -22,7 +22,6 @@ public class ContactService {
         return contactRepository.findById(id).get();
     }
     public List<Contact> listContacts() {
-        List<Contact> aasim_ali = contactRepository.findAll();
-        return aasim_ali;
+        return contactRepository.findAll();
     }
 }
