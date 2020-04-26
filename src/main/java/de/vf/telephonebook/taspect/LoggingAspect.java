@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Aspect
 public class LoggingAspect {
-    @Before("execution(public de.vf.telephonebook.model.Contact save*(*))")
+  /*  @Before("execution(public de.vf.telephonebook.model.Contact save*(*))")
     public void log(JoinPoint joinPoint) {
         System.out.println("Save Method called!!!!! "+joinPoint.getSignature().getName());
         Contact arg = (Contact) joinPoint.getArgs()[0];
@@ -21,7 +21,7 @@ public class LoggingAspect {
     public void log1(JoinPoint joinPoint) {
         System.out.println("Method called!!!!! "+joinPoint.getArgs());
     }
-    @Around("execution(* listAll*(..))")
+  //  @Around("execution(* listAll*(..))")
     public void logAroundAllMethods(ProceedingJoinPoint joinPoint) throws Throwable
     {
         System.out.println("****LoggingAspect.logAroundAllMethods() : " + joinPoint.getSignature().getName() + ": Before Method Execution");
@@ -31,5 +31,5 @@ public class LoggingAspect {
             //Do Something useful, If you have
         }
         System.out.println("****LoggingAspect.logAroundAllMethods() : " + joinPoint.getSignature().getName() + ": After Method Execution");
-    }
+    }*/
 }

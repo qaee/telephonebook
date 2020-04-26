@@ -7,5 +7,12 @@
       <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>
       <jdbc-url>jdbc:derby:$USER_HOME$/projects/webdb;create=true</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="demo" uuid="8190967f-b85b-4eec-8778-2c2d5b580bd7">
+      <driver-ref>h2.unified</driver-ref>
+      <synchronize>true</synchronize>
+      <configured-by-url>true</configured-by-url>
+      <jdbc-driver>org.h2.Driver</jdbc-driver>
+      <jdbc-url>jdbc:h2:file:~/db/demo</jdbc-url>
+    </data-source>
   </component>
 </project>

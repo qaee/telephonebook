@@ -15,7 +15,8 @@ public class ContactService {
     public Contact save(Contact contact) {
          return contactRepository.save(contact);
     }
-    public Contact findByName(String name) {
+  public Contact findByName(String name) {
+
         return contactRepository.findByName(name);
     }
     public Contact findById(Integer id){
